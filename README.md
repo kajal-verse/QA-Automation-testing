@@ -16,5 +16,3 @@ This is my first test automation project i built while learning QA testing.
 - Pytest
 - WebDriver Manager
 - pytest-html (for test reports)
-
-## Project Structure
