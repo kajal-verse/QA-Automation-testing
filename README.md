@@ -22,4 +22,4 @@ Tests run automatically on push/PR via GitHub
    - Pytest Docs
    - SauceDemo
 
-## Author: Kajal Verse | GitHub
+## Author: Kajal Sharma| [GitHub Profile](https://github.com/kajal-verse) | [Project Repo](https://github.com/kajal-verse/QA-Automation-testing)
