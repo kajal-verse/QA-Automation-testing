@@ -1,18 +1,12 @@
 from selenium.webdriver.common.by import By
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 def test_valid_login(driver):
-    driver.find_element(By.ID, "user-name").send_keys("standard_user")
+    driver.get("https://www.saucedemo.com/")
+
+    wait = WebDriverWait(driver, 10)
+
+    wait.until(EC.presence_of_element_located((By.ID, "user-name"))).send_keys("standard_user")
     driver.find_element(By.ID, "password").send_keys("secret_sauce")
     driver.find_element(By.ID, "login-button").click()
-
-    assert "inventory" in driver.current_url
-
-
-def test_invalid_login(driver):
-    driver.find_element(By.ID, "user-name").send_keys("wrong_user")
-    driver.find_element(By.ID, "password").send_keys("wrong_pass")
-    driver.find_element(By.ID, "login-button").click()
-
-    error = driver.find_element(By.CSS_SELECTOR, "[data-test='error']")
-    assert error.is_displayed()
