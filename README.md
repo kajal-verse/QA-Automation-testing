@@ -1,27 +1,24 @@
-#  QA Automation Project (Selenium + Pytest)
+## QA Automation Testing
+Selenium + Pytest testing framework for SauceDemo e-commerce app.
 
-This is a UI automation testing framework built using **Selenium + Pytest** for testing the SauceDemo application.
+## Run Tests
+pytest -v                    # Run all
+pytest --html=reports/report.html --self-contained-html  # With report
+pytest tests/test_login.py   # Specific file
 
-## Project Overview
+## Tech Stack
 
-The project covers:
-- Login testing
-- Add/Remove cart functionality
-- Logout testing
-- Selenium automation using Python
-- Pytest framework structure
-- Reusable fixtures (conftest.py)
+Python 
+Selenium 
+Pytest 
+ChromeDriver
 
----
+## CI/CD
+Tests run automatically on push/PR via GitHub Actions → See "Actions" tab
 
-##  Application Under Test
-https://www.saucedemo.com/
+## Learn More
+   Selenium Docs
+   Pytest Docs
+   SauceDemo
 
----
-
-##  Tech Stack
-
-- Python
-- Selenium WebDriver
-- Pytest
-- ChromeDriver
+## Author: Kajal Verse | GitHub
